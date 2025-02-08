@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="naz.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Professional Resume</h1>
+        <p>Fill out the form below to build your resume.</p>
+    </header>
+    <main>
+        <section id="resume-form">
+            <form id="resumeBuilder">
+                <fieldset>
+                    <legend><strong>Personal Information</strong></legend>
+                    
+                    <div class="form-group">
+                        <label for="resumeLink">Resume URL:</label>
+                        <input type="url" id="resumeLink" name="resumeLink" placeholder="https://your-resume.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address:</label>
+                        <input type="email" id="contactEmail" name="contactEmail" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number:</label>
+                        <input type="tel" id="contactPhone" name="contactPhone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profileImg">Upload Profile Picture:</label>
+                        <input type="file" id="profileImg" name="profileImg" accept="image/*" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Education Background</strong></legend>
+                    <textarea id="educationInfo" name="educationInfo" rows="5" placeholder="List your education details here..." required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Work Experience</strong></legend>
+                    <textarea id="workExperience" name="workExperience" rows="5" placeholder="Describe your work experience here..." required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Skillset</strong></legend>
+                    <textarea id="skillSet" name="skillSet" rows="5" placeholder="List your skills here..." required></textarea>
+                </fieldset>
+
+                <button type="submit">Create Resume</button>
+            </form>
+        </section>
+
+        <section id="resumeDisplay">
+            <!-- The generated resume will be displayed here -->
+        </section>
+    </main>
+    <script src="sum.js"></script>
+</body>
+</html>

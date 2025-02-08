@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    text-align: center;
+    color: #34495e;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    max-width: 650px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+}
+
+legend {
+    font-weight: bold;
+    color: #2e86c1;
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    color: #333333;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #a9cce3;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    border: none;
+    padding: 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #5dade2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2874a6;
+}
+
+#resumeDisplay {
+    max-width: 650px;
+    margin: auto;
+    padding: 25px;
+    border: 2px solid #a9cce3;
+    border-radius: 8px;
+    background-color: #fdfefe;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profileImage {
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #5dade2;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
